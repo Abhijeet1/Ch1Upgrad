@@ -42,7 +42,7 @@ public class RestAPIController {
 	//http://localhost:9000/findbyid?id=5
 	@RequestMapping("/findbyid")
 	public String findById(@RequestParam("id") long id) {
-		String result = "";		
+		String result = "";					
 		result = repository.findById(id).toString();
 		return result;
 	}
